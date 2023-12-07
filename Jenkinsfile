@@ -10,10 +10,10 @@ pipeline {
     parameters {
         string (name: 'IMAGE_NAME',
                 description: "Specify Image Name",
-                defaultValue: '')
+                defaultValue: 'bkimminich/juice-shop')
         string (name: 'IMAGE_TAG',
                 description: "Specify Image Tag",
-                defaultValue: '')
+                defaultValue: 'latest')
     }
 
     stages {
