@@ -15,7 +15,7 @@ services:
       - jenkins-docker-certs:/certs/client
       - jenkins-data:/var/jenkins_home
   jenkins:
-    image: jenkins/jenkins
+    image: myjenkins-docker:1
     environment:
       - DOCKER_HOST=tcp://docker:2376
       - DOCKER_CERT_PATH=/certs/client
